@@ -1,0 +1,60 @@
+body {
+  background-color: #0f1424;
+  font-size: 18px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 10% 15% 15%;
+  gap: 20px;
+  row-gap: 60px;
+}
+
+.card {
+  background-color: #1c1f4a;
+  border-radius: 10px;
+}
+
+.card-principal {
+  grid-row: span 2;
+  color: #6f76c8;
+  box-shadow: 0 -40px #1c1f4a;
+  background-color: #5847eb;
+}
+
+.work {
+  box-shadow: 0 -40px #ff8c66;
+}
+
+.play {
+  box-shadow: 0 -40px #56c2e6;
+}
+
+.study {
+  box-shadow: 0 -40px #ff5c7c;
+}
+
+.exercise {
+  box-shadow: 0 -40px #4acf81;
+}
+
+.social {
+  box-shadow: 0 -40px #7536d3;
+}
+
+.self-care {
+  box-shadow: 0 -40px #f1c65b;
+}
+
+.attribution {
+  color: white;
+  font-size: 12px;
+}
+.attribution a {
+  text-decoration: none;
+  color: aquamarine;
+}
+
+/*# sourceMappingURL=style.css.map */

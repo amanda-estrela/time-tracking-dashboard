@@ -1,0 +1,61 @@
+body{
+    background-color: hsl(226, 43%, 10%);
+    font-size: 18px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 10% 15% 15%;
+    gap: 20px;
+    row-gap: 60px;
+}
+
+.card {
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 10px;
+
+}
+
+.card-principal {
+    grid-row: span 2;
+    color: hsl(235, 45%, 61%);
+    box-shadow: 0 -40px hsl(235, 46%, 20%);
+    background-color: hsl(246, 80%, 60%);
+    
+}
+
+.work{
+    box-shadow: 0 -40px hsl(15, 100%, 70%);
+}
+
+.play {
+    box-shadow: 0 -40px hsl(195, 74%, 62%);
+}
+
+.study {
+    box-shadow: 0 -40px hsl(348, 100%, 68%);
+}
+
+.exercise {
+    box-shadow: 0 -40px hsl(145, 58%, 55%);
+}
+
+.social {
+    box-shadow: 0 -40px hsl(264, 64%, 52%);
+}
+
+.self-care{
+    box-shadow: 0 -40px hsl(43, 84%, 65%);
+}
+
+.attribution {
+    color: white; 
+    font-size: 12px;  
+
+    a {
+        text-decoration: none;
+        color: aquamarine;
+    }
+}
