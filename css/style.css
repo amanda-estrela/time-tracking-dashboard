@@ -35,28 +35,39 @@ body {
   border-radius: 50%;
 }
 
-.work {
-  box-shadow: 0 -40px #ff8c66;
+.icone {
+  display: flex;
+  justify-content: right;
 }
 
-.play {
-  box-shadow: 0 -40px #56c2e6;
+.work .icone {
+  background-color: #ff8c66;
+  border-radius: 10px;
 }
 
-.study {
-  box-shadow: 0 -40px #ff5c7c;
+.play .icone {
+  background-color: #56c2e6;
+  border-radius: 10px;
 }
 
-.exercise {
-  box-shadow: 0 -40px #4acf81;
+.study .icone {
+  background-color: #ff5c7c;
+  border-radius: 10px;
 }
 
-.social {
-  box-shadow: 0 -40px #7536d3;
+.exercise .icone {
+  background-color: #4acf81;
+  border-radius: 10px;
 }
 
-.self-care {
-  box-shadow: 0 -40px #f1c65b;
+.social .icone {
+  background-color: #7536d3;
+  border-radius: 10px;
+}
+
+.self-care .icone {
+  background-color: #f1c65b;
+  border-radius: 10px;
 }
 
 .attribution {

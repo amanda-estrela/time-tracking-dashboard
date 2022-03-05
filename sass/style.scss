@@ -21,7 +21,10 @@
 .card {
     background-color: hsl(235, 46%, 20%);
     border-radius: 10px;
+   
 }
+
+
 
 .card-principal {
     grid-row: span 2;
@@ -35,28 +38,51 @@
     }
 }
 
+.icone {
+    display: flex;
+    justify-content: right;
+}
+
 .work{
-    box-shadow: 0 -40px hsl(15, 100%, 70%);
+    .icone {
+        background-color: hsl(15, 100%, 70%);
+        border-radius: 10px;
+    }
 }
 
 .play {
-    box-shadow: 0 -40px hsl(195, 74%, 62%);
+    .icone {
+        background-color:hsl(195, 74%, 62%);
+        border-radius: 10px;
+    }
 }
 
 .study {
-    box-shadow: 0 -40px hsl(348, 100%, 68%);
+    .icone{
+        background-color: hsl(348, 100%, 68%);
+        border-radius: 10px;
+    }
 }
 
 .exercise {
-    box-shadow: 0 -40px hsl(145, 58%, 55%);
+    .icone {
+        background-color:hsl(145, 58%, 55%) ;
+        border-radius: 10px;
+    }
 }
 
 .social {
-    box-shadow: 0 -40px hsl(264, 64%, 52%);
+    .icone {
+        background-color: hsl(264, 64%, 52%);
+        border-radius: 10px;
+    }
 }
 
 .self-care{
-    box-shadow: 0 -40px hsl(43, 84%, 65%);
+    .icone {
+        background-color: hsl(43, 84%, 65%);
+        border-radius: 10px;
+    }
 }
 
 .attribution {
