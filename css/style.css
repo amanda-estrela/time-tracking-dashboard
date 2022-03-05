@@ -1,15 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #0f1424;
   font-size: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 10% 15% 15%;
+  margin: 15% 15% 15%;
   gap: 20px;
   row-gap: 60px;
+  color: white;
 }
 
 .card {
@@ -20,8 +27,12 @@ body {
 .card-principal {
   grid-row: span 2;
   color: #6f76c8;
-  box-shadow: 0 -40px #1c1f4a;
   background-color: #5847eb;
+}
+.card-principal img {
+  width: 60px;
+  border: 3px solid white;
+  border-radius: 50%;
 }
 
 .work {
