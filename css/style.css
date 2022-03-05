@@ -7,15 +7,16 @@ body {
   font-size: 18px;
   font-family: "Rubik", sans-serif;
   font-weight: 300;
+  line-height: 3rem;
 }
 
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  margin: 15% 15% 15%;
+  margin: 10% 15%;
   gap: 20px;
-  row-gap: 60px;
+  row-gap: 50px;
   color: white;
 }
 
@@ -35,15 +36,16 @@ body {
   width: 60px;
   border: 3px solid white;
   border-radius: 50%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 .card-principal .perfil p {
-  color: #6f76c8;
+  color: #bdc1ff;
   font-weight: 400;
+  font-size: 15px;
 }
 .card-principal .perfil h1 {
-  margin-top: 1rem;
   font-size: 2rem;
+  margin-bottom: 2rem;
 }
 .card-principal .escolha-periodo {
   font-weight: 400;
@@ -51,6 +53,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  line-height: 1;
 }
 .card-principal .periodo:hover {
   color: white;
@@ -59,7 +62,7 @@ body {
 
 .card {
   border-radius: 10px;
-  height: fit-content;
+  height: 200px;
 }
 .card .icone {
   border-radius: 10px;
@@ -78,6 +81,18 @@ body {
   background-color: #1c1f4a;
   border-radius: 10px;
   padding: 20px;
+}
+.card__conteudo h2 {
+  font-size: 13px;
+  font-weight: 500;
+}
+.card__conteudo p {
+  font-size: 3rem;
+}
+.card__conteudo h3 {
+  font-size: 14px;
+  color: #6f76c8;
+  font-weight: 400;
 }
 
 .work {
@@ -112,6 +127,14 @@ body {
 .attribution a {
   text-decoration: none;
   color: aquamarine;
+}
+
+.card__conteudo-semana {
+  display: none;
+}
+
+.card__conteudo-mes {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
