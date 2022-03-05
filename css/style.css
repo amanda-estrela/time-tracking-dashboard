@@ -19,60 +19,95 @@ body {
   color: white;
 }
 
-.card {
-  background-color: #1c1f4a;
-  border-radius: 10px;
-}
-
 .card-principal {
   grid-row: span 2;
   color: #6f76c8;
-  background-color: #5847eb;
+  background-color: #1c1f4a;
+  border-radius: 10px;
 }
-.card-principal img {
+.card-principal .perfil {
+  background-color: #5847eb;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+}
+.card-principal .perfil img {
   width: 60px;
   border: 3px solid white;
   border-radius: 50%;
+  margin-bottom: 3rem;
+}
+.card-principal .perfil p {
+  color: #6f76c8;
+  font-weight: 400;
+}
+.card-principal .perfil h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+}
+.card-principal .escolha-periodo {
+  font-weight: 400;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card-principal .periodo:hover {
+  color: white;
+  cursor: pointer;
 }
 
-.icone {
+.card {
+  border-radius: 10px;
+  height: fit-content;
+}
+.card .icone {
+  border-radius: 10px;
   display: flex;
   justify-content: right;
+  height: 50px;
+  overflow: hidden;
+}
+.card .icone img {
+  max-width: 100%;
+  height: auto;
+  align-self: center;
 }
 
-.work .icone {
+.card__conteudo {
+  background-color: #1c1f4a;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.work {
   background-color: #ff8c66;
-  border-radius: 10px;
 }
 
-.play .icone {
+.play {
   background-color: #56c2e6;
-  border-radius: 10px;
 }
 
-.study .icone {
+.study {
   background-color: #ff5c7c;
-  border-radius: 10px;
 }
 
-.exercise .icone {
+.exercise {
   background-color: #4acf81;
-  border-radius: 10px;
 }
 
-.social .icone {
+.social {
   background-color: #7536d3;
-  border-radius: 10px;
 }
 
-.self-care .icone {
+.self-care {
   background-color: #f1c65b;
-  border-radius: 10px;
 }
 
 .attribution {
   color: white;
   font-size: 12px;
+  text-align: center;
 }
 .attribution a {
   text-decoration: none;
