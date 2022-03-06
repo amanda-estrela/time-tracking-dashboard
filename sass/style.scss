@@ -13,7 +13,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 10% 15%;
+    margin: 5% 15%;
     gap: 20px;
     row-gap: 50px;
     color: white;
@@ -52,19 +52,27 @@
 
     .escolha-periodo {
         font-weight: 400;
-        padding: 20px;
+        padding: 25px 20px;
         display: flex;
         flex-direction: column;
         gap: 10px;
         line-height: 1;
     }
 
-    .periodo:hover {
+    .periodo {
+        padding-bottom: 20px;
+    
+        &:hover {
         color: white;
         cursor: pointer;
+        }
+    }
 
+    .ativo {
+        color: white;
     }
 }
+
 
 .card {
     border-radius: 10px;
@@ -91,6 +99,10 @@
     border-radius: 10px;
     padding: 20px;
 
+    &:hover {
+        background-color: hsl(235, 45%, 61%);
+    }
+
     h2 {
         font-size: 13px;
         font-weight: 500;
@@ -101,7 +113,7 @@
 
     h3 {
         font-size: 14px;
-        color: hsl(235, 45%, 61%);
+        color: hsl(236, 100%, 87%);
         font-weight: 400;
     }
 }
@@ -148,4 +160,8 @@
 
 .card__conteudo-mes {
     display: none;
+}
+
+.ativo {
+    display: block;
 }
