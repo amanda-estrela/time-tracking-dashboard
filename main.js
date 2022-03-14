@@ -6,24 +6,19 @@ for (let contador = 0; contador < options.length; contador++){
     const content  = document.querySelector(`.card__conteudo-${period}`);
 
     options.addEventListener('click', ()=> {
-   /* content.classList.add('ativo');   
-    options[contador].classList.add('ativo');
-    })
-
-    while(!(options.indexOf(period)) = contador)) {
-        content.classList.remove('ativo');
-        options[!(contador)].classList.remove('ativo');
-    }
-}*/
-    
         switch (options.indexOf(period) = contador){
             case true:
                 content.classList.add('ativo');
                 options[contador].classList.add('ativo');
+                console.log('verdade')
                 break
-            default:
+            case false:
                 content.classList.remove('ativo');
                 options[contador].classList.remove('ativo');
+                console.log('falso')
+                break
+            default:
+                console.log("teste");
         }
     })}
 

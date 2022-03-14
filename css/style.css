@@ -55,14 +55,14 @@ body {
   gap: 10px;
   line-height: 1;
 }
-.card-principal .periodo {
+.card-principal .escolha-periodo .periodo {
   padding-bottom: 20px;
 }
-.card-principal .periodo:hover {
+.card-principal .escolha-periodo .periodo:hover {
   color: white;
   cursor: pointer;
 }
-.card-principal .ativo {
+.card-principal .escolha-periodo .ativo {
   color: white;
 }
 
@@ -103,6 +103,9 @@ body {
   color: #bdc1ff;
   font-weight: 400;
 }
+.card__conteudo .ativo {
+  display: block;
+}
 
 .work {
   background-color: #ff8c66;
@@ -128,14 +131,8 @@ body {
   background-color: #f1c65b;
 }
 
-.attribution {
-  color: white;
-  font-size: 12px;
-  text-align: center;
-}
-.attribution a {
-  text-decoration: none;
-  color: aquamarine;
+.card__conteudo-dia {
+  display: none;
 }
 
 .card__conteudo-semana {
@@ -146,8 +143,14 @@ body {
   display: none;
 }
 
-.ativo {
-  display: block;
+.attribution {
+  color: white;
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: aquamarine;
 }
 
 /*# sourceMappingURL=style.css.map */

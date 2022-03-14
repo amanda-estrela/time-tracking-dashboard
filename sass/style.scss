@@ -57,21 +57,22 @@
         flex-direction: column;
         gap: 10px;
         line-height: 1;
-    }
 
-    .periodo {
-        padding-bottom: 20px;
-    
-        &:hover {
-        color: white;
-        cursor: pointer;
+        .periodo {
+            padding-bottom: 20px;
+        
+            &:hover {
+            color: white;
+            cursor: pointer;
+            }
         }
-    }
-
-    .ativo {
-        color: white;
-    }
+    
+        .ativo {
+            color: white;
+            }
+     }
 }
+
 
 
 .card {
@@ -116,6 +117,10 @@
         color: hsl(236, 100%, 87%);
         font-weight: 400;
     }
+    
+    .ativo {
+    display: block;
+    }
 }
 
 .work{ 
@@ -143,15 +148,8 @@
     background-color: hsl(43, 84%, 65%);
 }
 
-.attribution {
-    color: white; 
-    font-size: 12px;  
-    text-align: center;
-
-    a {
-        text-decoration: none;
-        color: aquamarine;
-    }
+.card__conteudo-dia {
+    display: none;
 }
 
 .card__conteudo-semana {
@@ -162,6 +160,13 @@
     display: none;
 }
 
-.ativo {
-    display: block;
+.attribution {
+    color: white; 
+    font-size: 12px;  
+    text-align: center;
+
+    a {
+        text-decoration: none;
+        color: aquamarine;
+    }
 }
