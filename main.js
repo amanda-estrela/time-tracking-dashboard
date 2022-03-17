@@ -1,7 +1,7 @@
 const options = document.querySelectorAll(".periodo")
 
 
-for (let contador = 0; contador < options.length; contador++){
+/*for (let contador = 0; contador < options.length; contador++){
     const period = options[contador].classList[1];
     const content  = document.querySelector(`.card__conteudo-${period}`);
 
@@ -20,6 +20,6 @@ for (let contador = 0; contador < options.length; contador++){
             default:
                 console.log("teste");
         }
-    })}
+    })}*/
 
 
