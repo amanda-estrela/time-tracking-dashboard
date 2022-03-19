@@ -173,11 +173,22 @@
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        margin: auto 5%;
+        margin: 10vh 10vw;
     }
 
     .card-principal {
         width: 80vw;
+
+        .perfil{
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .escolha-periodo {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
     }
 
     .card {
