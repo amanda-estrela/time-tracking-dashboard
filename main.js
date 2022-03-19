@@ -1,25 +1,25 @@
-const options = document.querySelectorAll(".periodo")
+const options = document.querySelectorAll(".periodo") //aray com os periodos para clicar  ==>>periodo é cada elemento 3 elementos
 
 
-/*for (let contador = 0; contador < options.length; contador++){
-    const period = options[contador].classList[1];
-    const content  = document.querySelector(`.card__conteudo-${period}`);
+options.forEach(function(periodo, indice) {
+    const period = options[indice].classList[1];   //string dia semana mes
+    const content  = document.querySelectorAll(`.card__conteudo-${period}`);
 
-    options.addEventListener('click', ()=> {
-        switch (options.indexOf(period) = contador){
-            case true:
-                content.classList.add('ativo');
-                options[contador].classList.add('ativo');
-                console.log('verdade')
-                break
-            case false:
-                content.classList.remove('ativo');
-                options[contador].classList.remove('ativo');
-                console.log('falso')
-                break
-            default:
-                console.log("teste");
+    periodo.addEventListener('click', ()=> {
+        const periodoDefault = document.querySelector(".ativo")
+        periodoDefault.classList.remove("ativo")
+
+        const cardConteudoDefault = document.querySelectorAll(".ativo")
+        cardConteudoDefault.forEach(function(elemento){
+            elemento.classList.remove("ativo")
+        })
+            
+        content.forEach(function(selecionado){
+            selecionado.classList.add("ativo")
+        })
+
+        options[indice].classList.add('ativo');
         }
-    })}*/
 
 
+)})
