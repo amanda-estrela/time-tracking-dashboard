@@ -91,9 +91,12 @@ body {
 .card__conteudo:hover {
   background-color: #6f76c8;
 }
-.card__conteudo h2 {
+.card__conteudo spam {
   font-size: 13px;
   font-weight: 500;
+}
+.card__conteudo img {
+  margin-left: 7vw;
 }
 .card__conteudo p {
   font-size: 3rem;
@@ -156,17 +159,20 @@ body {
 @media screen and (max-width: 480px) {
   .container {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin: 10vh 10vw;
   }
 
   .card-principal {
     width: 80vw;
+    height: fit-content;
   }
   .card-principal .perfil {
     display: grid;
     grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 1fr;
+  }
+  .card-principal .perfil img {
+    grid-row: span 2;
+    margin-top: 1rem;
   }
   .card-principal .escolha-periodo {
     flex-direction: row;
@@ -175,6 +181,9 @@ body {
 
   .card {
     width: 80vw;
+  }
+  .card .card__conteudo img {
+    margin-left: 55vw;
   }
 }
 
