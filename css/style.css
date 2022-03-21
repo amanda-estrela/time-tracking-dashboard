@@ -87,6 +87,8 @@ body {
   background-color: #1c1f4a;
   border-radius: 10px;
   padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 .card__conteudo:hover {
   background-color: #6f76c8;
@@ -96,7 +98,8 @@ body {
   font-weight: 500;
 }
 .card__conteudo img {
-  margin-left: 7vw;
+  align-self: center;
+  justify-self: end;
 }
 .card__conteudo p {
   font-size: 3rem;
@@ -182,8 +185,18 @@ body {
   .card {
     width: 80vw;
   }
-  .card .card__conteudo img {
-    margin-left: 55vw;
+  .card .card__conteudo {
+    grid-template-rows: 1fr 1fr;
+  }
+  .card .card__conteudo spam {
+    align-self: center;
+    justify-self: start;
+  }
+  .card .card__conteudo .ativo {
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
   }
 }
 

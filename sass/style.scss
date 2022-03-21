@@ -97,6 +97,8 @@
     background-color: hsl(235, 46%, 20%);
     border-radius: 10px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
 
     &:hover {
         background-color: hsl(235, 45%, 61%);
@@ -108,7 +110,8 @@
     }
 
     img {
-        margin-left: 7vw;
+        align-self: center;
+        justify-self: end;
     }
 
     p {
@@ -203,10 +206,19 @@
     .card {
         width: 80vw;
 
-        .card__conteudo {
+        .card__conteudo{
+            grid-template-rows: 1fr 1fr;
 
-            img {
-                margin-left: 55vw;
+            spam {
+                align-self: center;
+                justify-self: start;
+            }
+
+            .ativo {
+                grid-column: span 2;
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 10px;
             }
         }
     }
